@@ -1,9 +1,10 @@
 import React from "react";
+import KanbanBoard from "./KanbanBoard";
 
 export function App() {
   return (
     <div>
-      <h1>Welcome Kanban</h1>
+      <KanbanBoard />
     </div>
   );
 }
