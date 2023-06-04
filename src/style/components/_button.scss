@@ -1,0 +1,26 @@
+@import "../abstracts/_constants";
+
+@mixin app-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: scaleValue(7);
+    padding: scaleValue(8);
+    color: $primary-button-text-color;
+    background: none;
+    border: $primary-button-border-thickness solid $primary-button-text-color;
+    font-weight: $primary-font-weight;
+    font-size: scaleValue(15);
+    font-style: $primary-font-style;
+    font-family: $primary-font-family;
+    border-radius: $primary-button-border-radius;
+    cursor: pointer;
+}
+
+@mixin app-button-hover {
+    background: $primary-button-text-color;
+    color: $primary-white;
+}
+@mixin app-button-active {
+    background-color: $primary-button-active-color;
+}

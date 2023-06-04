@@ -1,0 +1,11 @@
+@import "_constants";
+
+@function scaleValue($value) {
+  @return calc(
+    $value *
+      (
+        clamp($min-viewport-width, $current-viewport-width, $max-viewport-width) /
+          $ideal-viewport-width
+      )
+  );
+}

@@ -1,0 +1,28 @@
+//display
+$ideal-viewport-width: 1440;
+$current-viewport-width: 100vw;
+$min-viewport-width: 350px;
+$max-viewport-width: 1920px;
+
+//text
+$primary-font-family: "Inter";
+$primary-font-style: normal;
+$primary-font-weight: 500;
+
+//colors
+$primary-header-text-color: #001747;
+$primary-item-text-color: #405175;
+$primary-button-text-color:#2d70fd;
+$primary-button-active-color: #2567f6;
+$primary-column-border-color: rgba(0, 23, 71, 0.07);
+$primary-draggable-item-border-color: rgba(0, 23, 71, 0.05);
+$primary-wrapper-border-color: #f6f9fb;
+$primary-white:#ffffff;
+$primary-gray:#f5f5f5;
+$primary-dialog-box-shadow-color:rgba(0, 0, 0, 0.3);
+$primary-dialog-background-color:rgba(0, 0, 0, 0.5);
+
+
+$primary-button-border-radius: 4px;
+$primary-dialog-border-radius: 4px;
+$primary-button-border-thickness: 1px;

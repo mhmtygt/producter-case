@@ -1,0 +1,17 @@
+@import "../abstracts/_constants";
+@import "../abstracts/_functions";
+
+@mixin app-input {
+  display: block;
+  height: scaleValue(36);
+  width: scaleValue(320);
+  font-size: scaleValue(22);
+  box-sizing: border-box;
+  padding: scaleValue(5) scaleValue(7);
+  border-radius: $primary-button-border-radius;
+  border: $primary-button-border-thickness solid $primary-button-text-color;
+  color: $primary-item-text-color;
+  font-family: $primary-font-family;
+  font-weight: $primary-font-weight;
+  font-style: $primary-font-style;
+}

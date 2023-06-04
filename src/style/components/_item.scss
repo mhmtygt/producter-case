@@ -1,0 +1,18 @@
+@import "../abstracts/_constants";
+@import "../abstracts/_functions";
+
+.draggable-item {
+  height: scaleValue(68);
+  padding: scaleValue(12);
+  border: 1px solid $primary-draggable-item-border-color;
+  border-radius: 4px;
+  margin: scaleValue(10) 0px;
+
+  font-family: $primary-font-family;
+  font-style: $primary-font-style;
+  font-weight: $primary-font-weight;
+  font-size: scaleValue(13);
+  line-height: scaleValue(16);
+
+  color: $primary-item-text-color;
+}

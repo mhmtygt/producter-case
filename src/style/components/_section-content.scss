@@ -1,0 +1,12 @@
+@import "../abstracts/_constants";
+@import "../abstracts/_functions";
+
+.kanban-column-cards {
+  background-color: $primary-white;
+  height: 100vh;
+  border-radius: 4px;
+  padding: scaleValue(10);
+  min-height: scaleValue(300);
+  max-height: scaleValue(550);
+  overflow: scroll;
+}
