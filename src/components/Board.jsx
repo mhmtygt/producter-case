@@ -42,18 +42,16 @@ export default function Board() {
   };
   return (
     <DragDropContext onDragEnd={handleOnDragEnd}>
-      <div className="kanban-grid">
-        <div className="kanban-board">
-          {Object.keys(itemState.boardData).map((value, index) => (
-            <div key={index} className="kanban-column">
-              <Section
-                header={value}
-                items={itemState.boardData[value]}
-                droppableId={value}
-              />
-            </div>
-          ))}
-        </div>
+      <div className="kanban-board">
+        {Object.keys(itemState.boardData).map((value, index) => (
+          <div key={index} className="kanban-column">
+            <Section
+              header={value}
+              items={itemState.boardData[value]}
+              droppableId={value}
+            />
+          </div>
+        ))}
       </div>
     </DragDropContext>
   );

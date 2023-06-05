@@ -1,9 +1,10 @@
-.kanban-board {
-  display: flex;
-  height: 100%;
-  justify-content: space-between;
-}
+@import "../abstracts/_constants";
+@import "../abstracts/_functions";
 
-.kanban-grid {
+.kanban-board {
   grid-row-start: 2;
+  grid-row-end:  2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
