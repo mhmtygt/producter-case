@@ -1,12 +1,25 @@
+@import "../abstracts/_breakpoint-manager";
+
 .layout {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 5fr 1fr;
   align-items: center;
   background: $primary-gray;
+  overflow: auto;
 }
 
 .app-grid {
   grid-column-start: 2;
   grid-column-end: 2;
   height: 100vh;
+
+  @include respond-to("small") {
+    grid-column-start: 1;
+    grid-column-end: span 3;
+  }
+
+  @include respond-to("huge") {
+    grid-column-start: 2;
+    grid-column-end: 2;
+  }
 }
