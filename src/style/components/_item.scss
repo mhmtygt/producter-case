@@ -15,4 +15,6 @@
   line-height: scaleValue(16);
 
   color: $primary-item-text-color;
+  word-break: break-all;
+  overflow-y: scroll;
 }
