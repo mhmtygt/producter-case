@@ -10,17 +10,21 @@ export default function Dialog({ open, setOpen }) {
   const taskRef = React.useRef();
 
   const handleClose = () => {
+    clearinput();
     setOpen(false);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (taskRef.current.value !== "") {
-      dispatch(
-        addTask({ id: nanoid().toString(), title: taskRef.current.value })
-      );
-      document.getElementById("task").value = "";
+    const title = taskRef.current.value.trim();
+    if (title !== "") {
+      dispatch(addTask({ id: nanoid().toString(), title: title }));
+      clearinput();
     }
+  };
+
+  const clearinput = () => {
+    document.getElementById("task").value = "";
   };
 
   useEffect(() => {
