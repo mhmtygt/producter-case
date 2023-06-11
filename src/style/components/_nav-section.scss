@@ -5,14 +5,14 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border-right: 1px solid $primary-beige;
+  border-right: 1px solid $primary-lighter-beige;
 }
 
 .logo {
   display: flex;
   align-items: center;
   height: scaleValue(40);
-  border-bottom: 1px solid $primary-beige;
+  border-bottom: 1px solid $primary-lighter-beige;
   padding-right: scaleValue(12);
   padding-left: scaleValue(6);
 }

@@ -8,7 +8,7 @@
   margin: 0 scaleValue(10);
   padding: scaleValue(10);
   background: $primary-white;
-  border: 1px solid $primary-beige;
+  border: 1px solid $primary-medium-beige;
   border-radius: 8px;
   justify-self: stretch;
 }
@@ -54,6 +54,6 @@
 }
 
 .wrapper {
-  border: 1px solid $primary-beige;
+  border: 1px solid $primary-lighter-beige;
   margin: scaleValue(10) 0px;
 }
