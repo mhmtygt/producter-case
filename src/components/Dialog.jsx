@@ -8,10 +8,19 @@ import ProfileIcon1 from "../assets/profile_icon_1.svg";
 import ProfileIcon2 from "../assets/profile_icon_2.svg";
 import ProfileIcon3 from "../assets/profile_icon_3.svg";
 
+import UrgentTaskIcon from "../assets/urgent_task_icon.svg";
+import MediumTaskIcon from "../assets/medium_task_icon.svg";
+import LowTaskIcon from "../assets/low_task_icon.svg";
+
 function generateProfile(random) {
   if (random % 2 === 0) return { icon: <ProfileIcon1 /> };
   else if (random % 3 === 0) return { icon: <ProfileIcon2 /> };
   else return { icon: <ProfileIcon3 /> };
+}
+function generateUrgentStatus(random) {
+  if (random % 2 === 0) return { priority: <UrgentTaskIcon /> };
+  else if (random % 3 === 0) return { priority: <MediumTaskIcon /> };
+  else return { priority: <LowTaskIcon /> };
 }
 
 export default function Dialog({ open, setOpen }) {
@@ -35,6 +44,7 @@ export default function Dialog({ open, setOpen }) {
           title: title,
           profile: generateProfile(nanoid()).icon,
           commentCount: commentCount(),
+          priority: generateUrgentStatus(nanoid()).priority,
         })
       );
       clearinput();

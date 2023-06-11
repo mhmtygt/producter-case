@@ -1,6 +1,5 @@
 import React from "react";
 
-import UrgentTaskIcon from "../assets/urgent_task_icon.svg";
 import TaskIcon from "../assets/task_icon.svg";
 import CategoryIcon from "./CategoryIcon";
 
@@ -20,7 +19,7 @@ export default function Item({ provided, item, ...rest }) {
           </CategoryIcon>
         </div>
         <div className="footer-section-2">
-          <UrgentTaskIcon />
+          {item.priority}
           <div className="comment">{item.commentCount}</div>
           {item.profile}
         </div>
