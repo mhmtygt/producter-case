@@ -4,17 +4,60 @@
 .draggable-item {
   height: scaleValue(68);
   padding: scaleValue(12);
-  border: 1px solid $primary-draggable-item-border-color;
+  border: 1px solid $primary-beige;
   border-radius: 4px;
   margin: scaleValue(10) 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: scaleValue(2);
+}
 
+.item-content {
   font-family: $primary-font-family;
   font-style: $primary-font-style;
   font-weight: $primary-font-weight;
   font-size: scaleValue(13);
   line-height: scaleValue(16);
 
-  color: $primary-item-text-color;
+  color: $primary-medium-gray;
   word-break: break-all;
   overflow-y: scroll;
+  flex: 1;
+}
+
+.item-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-section-1 {
+}
+
+.comment {
+  display: flex;
+  border: 1px solid $primary-beige;
+  border-radius: 4px;
+  padding: scaleValue(1);
+
+  font-family: $primary-font-family;
+  font-style: $primary-font-style;
+  font-weight: $primary-light-font-weight;
+  font-size: scaleValue(13);
+  line-height: scaleValue(16);
+  width: scaleValue(24);
+  height: scaleValue(24);
+  align-items: center;
+  justify-content: center;
+
+  color: $primary-dark-blue;
+}
+
+.footer-section-2 {
+  display: flex;
+  flex-direction: row;
+  gap: scaleValue(14);
+  align-items: center;
 }

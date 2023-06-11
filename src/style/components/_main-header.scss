@@ -1,0 +1,26 @@
+@import "../abstracts/_constants.scss";
+@import "../abstracts/_functions.scss";
+
+.main-header {
+  min-height: scaleValue(32);
+  height: scaleValue(38);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: scaleValue(2) scaleValue(18);
+  gap: scaleValue(10);
+  overflow-x: auto;
+  border-bottom: 1px solid $primary-beige;
+}
+
+.filter-section {
+  flex: 1;
+  display: flex;
+  gap: scaleValue(10);
+  align-items: center;
+}
+
+.add-button {
+  display: flex;
+}

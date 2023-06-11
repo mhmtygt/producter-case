@@ -1,0 +1,59 @@
+@import "../abstracts/_constants";
+@import "../abstracts/_functions";
+
+.kanban-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 0 scaleValue(10);
+  padding: scaleValue(10);
+  background: $primary-white;
+  border: 1px solid $primary-beige;
+  border-radius: 8px;
+  justify-self: stretch;
+}
+
+.kanban-column-header {
+  padding: scaleValue(10) 0px 0px scaleValue(14);
+  display: flex;
+  justify-content: space-between;
+  gap: scaleValue(10);
+  align-items: center;
+  flex-direction: row;
+}
+
+.header-icon {
+}
+
+.header-text {
+  flex: 1;
+  font-family: $primary-font-family;
+  font-style: $primary-font-style;
+  font-weight: $primary-font-weight;
+  font-size: scaleValue(16);
+  line-height: scaleValue(19);
+  letter-spacing: scaleValue(0.018);
+  color: $primary-dark-blue;
+}
+
+.task-count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0px;
+  border-radius: 4px;
+  background: $primary-lighter-blue;
+  color: $primary-light-blue;
+  width: scaleValue(24);
+  height: scaleValue(24);
+  font-family: $primary-font-family;
+  font-style: $primary-font-style;
+  font-weight: $primary-light-font-weight;
+  font-size: scaleValue(13);
+  line-height: scaleValue(6);
+}
+
+.wrapper {
+  border: 1px solid $primary-beige;
+  margin: scaleValue(10) 0px;
+}

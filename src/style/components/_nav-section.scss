@@ -1,0 +1,48 @@
+@import "../abstracts/_constants";
+@import "../abstracts/_functions";
+
+.first-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid $primary-beige;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  height: scaleValue(40);
+  border-bottom: 1px solid $primary-beige;
+  padding-right: scaleValue(12);
+  padding-left: scaleValue(6);
+}
+
+.nav-section {
+  flex: 1;
+  overflow: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: scaleValue(2);
+  margin-right: scaleValue(2);
+  padding-right: scaleValue(12);
+  padding-left: scaleValue(6);
+}
+
+.nav-menu-1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: scaleValue(5);
+  margin-top: scaleValue(12);
+}
+
+.nav-menu-2 {
+  display: flex;
+  flex-direction: column;
+  gap: scaleValue(5);
+}
+
+.nav-profile-menu {
+}

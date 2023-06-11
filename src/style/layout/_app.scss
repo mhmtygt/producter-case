@@ -1,25 +1,21 @@
-@import "../abstracts/_breakpoint-manager";
+@import "../abstracts/_functions";
 
-.layout {
-  display: grid;
-  grid-template-columns: 1fr 5fr 1fr;
-  align-items: center;
-  background: $primary-gray;
-  overflow: auto;
+.app-layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: $primary-white;
+  height: 100vh;
 }
 
-.app-grid {
-  grid-column-start: 2;
-  grid-column-end: 2;
-  height: 100vh;
+.divider {
+  border: 1px solid $primary-beige;
+  width: 90%;
+  align-self: center;
+}
 
-  @include respond-to("small") {
-    grid-column-start: 1;
-    grid-column-end: span 3;
-  }
-
-  @include respond-to("huge") {
-    grid-column-start: 2;
-    grid-column-end: 2;
-  }
+.divider-vertical {
+  border: 1px solid $primary-beige;
+  height: scaleValue(20);
+  align-self: center;
 }
