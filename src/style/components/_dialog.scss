@@ -10,21 +10,26 @@
     font-family: $primary-font-family;
     font-style: $primary-font-style;
     font-weight: $primary-font-weight;
-    color: $primary-header-text-color;
+    color: $primary-dark-blue;
     font-size: scaleValue(26);
   }
-  
-  input[type=submit], button {
+
+  input[type="submit"],
+  button {
     @include app-button;
   }
-  input[type=submit]:hover, button:hover {
+
+  input[type="submit"]:hover,
+  button:hover {
     @include app-button-hover;
   }
-  input[type=submit]:active, button:active {
+
+  input[type="submit"]:active,
+  button:active {
     @include app-button-active;
   }
 
-  input[type=text] {
+  input[type="text"] {
     @include app-input;
   }
 }

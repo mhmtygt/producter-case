@@ -1,0 +1,52 @@
+@import "../abstracts/_constants.scss";
+@import "../abstracts/_functions.scss";
+
+.main-content-header {
+  height: scaleValue(10);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: scaleValue(20);
+  overflow-y: auto;
+  border-bottom: 1px solid $primary-beige;
+}
+
+.main-content-header-section-1 {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: scaleValue(10);
+}
+
+.main-content-header-section-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: scaleValue(5);
+}
+
+.sprint-name {
+  font-family: $primary-font-family;
+  font-style: $primary-font-style;
+  font-weight: $primary-font-weight;
+  font-size: scaleValue(13);
+  line-height: scaleValue(6);
+  color: $primary-dark-blue;
+  white-space: nowrap;
+}
+
+.sprint-button {
+  border: 0px;
+  border-radius: 4px;
+  background: $primary-lighter-blue;
+  color: $primary-light-blue;
+  width: scaleValue(129);
+  height: scaleValue(32);
+  font-family: $primary-font-family;
+  font-style: $primary-font-style;
+  font-weight: $primary-font-weight;
+  font-size: scaleValue(13);
+  line-height: scaleValue(6);
+}

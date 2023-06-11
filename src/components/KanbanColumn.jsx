@@ -4,10 +4,20 @@ import { Draggable, Droppable } from "react-beautiful-dnd";
 
 import Item from "./Item";
 
-export default function Section({ header, items, droppableId }) {
+export default function KanbanColumn({
+  header,
+  items,
+  droppableId,
+  icon,
+  taskCount,
+}) {
   return (
-    <>
-      <div className="kanban-column-header">{header}</div>
+    <div className="kanban-column">
+      <div className="kanban-column-header">
+        <div className="header-icon">{icon}</div>
+        <div className="header-text">{header}</div>
+        <div className="task-count">{taskCount}</div>
+      </div>
       <div className="wrapper"></div>
       <Droppable droppableId={droppableId}>
         {(provided) => (
@@ -35,6 +45,6 @@ export default function Section({ header, items, droppableId }) {
           </div>
         )}
       </Droppable>
-    </>
+    </div>
   );
 }

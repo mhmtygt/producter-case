@@ -1,0 +1,47 @@
+@import "../abstracts/_constants";
+
+.icon-button {
+  cursor: pointer;
+  background: $primary-dark-beige;
+  border: 0px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-plus-button {
+  cursor: pointer;
+  background: $primary-white;
+  border: 1px solid $primary-light-blue;
+  border-radius: 4px;
+  width: scaleValue(30);
+  height: scaleValue(30);
+
+  path {
+    stroke: $primary-light-blue;
+  }
+}
+
+.icon-plus-button:hover,
+.icon-button:hover {
+  background: $primary-light-blue;
+
+  path {
+    stroke: white;
+  }
+}
+
+.selected {
+  background: $primary-light-blue;
+}
+
+.icon-large {
+  width: scaleValue(30);
+  height: scaleValue(30);
+}
+
+.icon-small {
+  width: scaleValue(24);
+  height: scaleValue(24);
+}

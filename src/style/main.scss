@@ -1,17 +1,23 @@
 @import "abstracts/constants.scss";
 @import "abstracts/functions.scss";
-@import "abstracts/breakpoint-manager";
 
 @import "layout/app.scss";
-@import "layout/board.scss";
-@import "layout/form.scss";
 @import "layout/dialog.scss";
 
 @import "components/button.scss";
+@import "components/icon-button";
+@import "components/section-button";
+@import "components/profile-section";
+@import "components/company-section";
 @import "components/input.scss";
+@import "components/search-input.scss";
 @import "components/dialog.scss";
 @import "components/item.scss";
-@import "components/section.scss";
-@import "components/section-header.scss";
-@import "components/section-content.scss";
-@import "components/section-wrapper.scss";
+@import "components/nav-section.scss";
+@import "components/kanban-column.scss";
+@import "components/kanban-column-cards";
+@import "components/main-header.scss";
+@import "components/category-icon.scss";
+@import "components/main-content-header.scss";
+@import "components/main-content.scss";
+@import "components/main.scss";

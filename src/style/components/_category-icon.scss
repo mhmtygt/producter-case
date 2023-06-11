@@ -1,0 +1,16 @@
+@import "../abstracts/_constants";
+@import "../abstracts/_functions";
+
+.category-icon {
+  display: flex;
+  justify-content: row;
+  align-items: center;
+  gap: scaleValue(5);
+  white-space: nowrap;
+  font-family: $primary-font-family;
+  font-style: $primary-font-style;
+  font-weight: $primary-lighter-font-weight;
+  font-size: scaleValue(13);
+  line-height: scaleValue(6);
+  color: $primary-gray;
+}
