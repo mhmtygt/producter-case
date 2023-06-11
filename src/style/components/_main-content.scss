@@ -1,0 +1,17 @@
+@import "../abstracts/_constants";
+@import "../abstracts/_functions";
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  background: $primary-light-beige;
+  height: 100vh;
+  overflow: auto;
+}
+
+.main-content-kanban {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  padding: scaleValue(20);
+}

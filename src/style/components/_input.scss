@@ -8,9 +8,9 @@
   font-size: scaleValue(22);
   box-sizing: border-box;
   padding: scaleValue(5) scaleValue(7);
-  border-radius: $primary-button-border-radius;
-  border: $primary-button-border-thickness solid $primary-button-text-color;
-  color: $primary-item-text-color;
+  border-radius: 4px;
+  border: 1px solid $primary-light-blue;
+  color: $primary-medium-gray;
   font-family: $primary-font-family;
   font-weight: $primary-font-weight;
   font-style: $primary-font-style;

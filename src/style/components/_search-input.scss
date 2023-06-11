@@ -1,0 +1,29 @@
+@import "../abstracts/_constants";
+@import "../abstracts/_functions";
+
+.search-input {
+  background: $primary-dark-beige;
+  width: scaleValue(200);
+  height: scaleValue(24);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: scaleValue(5);
+  padding: scaleValue(2);
+  border: 0px;
+  border-radius: 4px;
+
+  input {
+    flex: 1;
+    background: $primary-dark-beige;
+
+    border: 0px;
+    height: scaleValue(22);
+    box-sizing: border-box;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+}

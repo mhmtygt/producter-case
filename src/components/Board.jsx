@@ -1,17 +1,31 @@
 import React, { useEffect } from "react";
+import { customAlphabet } from "nanoid";
 
 import { useSelector, useDispatch } from "react-redux";
 import { DragDropContext } from "react-beautiful-dnd";
 
-import Section from "./Section";
+import KanbanColumn from "./KanbanColumn";
 import {
   createItemsByEachSection,
   setBoardData,
 } from "../redux/slices/itemSlice";
 
+import ToDoColumnIcon from "../assets/todo_column_icon.svg";
+import DoneColumnIcon from "../assets/done_column_icon.svg";
+import BacklogColumnIcon from "../assets/backlog_column_icon.svg";
+import InProgressColumnIcon from "../assets/inprogress_column_icon.svg";
+
+const sectionIcons = [
+  <BacklogColumnIcon />,
+  <ToDoColumnIcon />,
+  <InProgressColumnIcon />,
+  <DoneColumnIcon />,
+];
+
 export default function Board() {
   const itemState = useSelector((state) => state.itemState);
   const dispatch = useDispatch();
+  const taskCount = customAlphabet("123456789", 2);
 
   useEffect(() => {
     dispatch(setBoardData(createItemsByEachSection(itemState)));
@@ -42,17 +56,16 @@ export default function Board() {
   };
   return (
     <DragDropContext onDragEnd={handleOnDragEnd}>
-      <div className="kanban-board">
-        {Object.keys(itemState.boardData).map((value, index) => (
-          <div key={index} className="kanban-column">
-            <Section
-              header={value}
-              items={itemState.boardData[value]}
-              droppableId={value}
-            />
-          </div>
-        ))}
-      </div>
+      {Object.keys(itemState.boardData).map((value, index) => (
+        <KanbanColumn
+          key={index}
+          header={value}
+          items={itemState.boardData[value]}
+          droppableId={value}
+          icon={sectionIcons[index]}
+          taskCount={taskCount()}
+        />
+      ))}
     </DragDropContext>
   );
 }
